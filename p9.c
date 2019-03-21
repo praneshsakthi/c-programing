@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+  int a,b,c,d,i,j,count=0;
+  scanf("%d%d",&a,&b);
+  if(b<2)
+  {
+    printf("0");
+    exit(0);
+  }
+  c=a;
+  if(a%2==0)
+  {
+    if(a==2)
+    count++;
+    a++;
+  }
+  for(i=a;i<=b;i+=2)
+  {
+    d=0;
+    for(j=2;j<=i/2;j++)
+    {
+     if(i%j==0)
+     {
+       d=1;
+       break;
+     }
+    }
+    if(d==0)
+    {
+      count++;
+    }
+  }
+  printf("%d",count);
+  }
