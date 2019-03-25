@@ -3,10 +3,10 @@
 int main()
 {
   char a[100];
-  int i,num=0,l;
+  int i,num=0,l1;
   scanf("%s",a);
-  l=strlen(a);
-  for(i=0;i<l;i++)
+  l1=strlen(a);
+  for(i=0;i<l1;i++)
   {
     if(a[i]=='I'||a[i]=='i')
     {
@@ -21,7 +21,7 @@ int main()
     num+=10;
     }
   }
-  for(i=l;i>0;i--)
+  for(i=l1;i>0;i--)
   {
   if(a[i]>a[i-1])
  {
